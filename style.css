@@ -367,10 +367,12 @@ header {
     scroll-snap-type: x;
     cursor: grab;
     scroll-behavior: smooth;
-    
+    scrollbar-width: none;
+    justify-content: left;
   }
   .card {
     min-width: calc(50% - .5rem);
+    aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,6 +382,9 @@ header {
   .card-img {
     min-width: 230px;
     min-height: 98px;
+  }
+  .wrapper::-webkit-scrollbar { /* for chrome */
+    display: none;
   }
 }
 
@@ -449,12 +454,14 @@ header {
   }
 }
 
-
-
-
-
-
-
+@media (max-width: 415px) {
+  .box-offer {
+    width: 300px;
+  }
+  .offer-description {
+    padding: 15px;
+  }
+}
 
 
 /* --> SECTION 5: KONTAKT <-- */
