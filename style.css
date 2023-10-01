@@ -388,6 +388,11 @@ header {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .card {
+    min-width: calc(100%);
+  }
+}
 
 /* SECTION 4: OFERTA */
 
