@@ -308,6 +308,11 @@ header {
   }
 }
 
+@media (max-width: 600px) {
+  .column-right2 {
+    height: 300px;
+  }
+}
 
 /* SECTION 3: NASZE BRANDY */
 
@@ -376,7 +381,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     user-select: none;
   }
   .card-img {
